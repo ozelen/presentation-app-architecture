@@ -1,0 +1,4 @@
+theme: white
+background: assets/img/background.png
+background-size: cover
+theme-override: assets/css/custom.css
