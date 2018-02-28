@@ -258,7 +258,7 @@ class RestApi<Model> implements IApi {
     }
 
     getItem(id: number): Model {
-        return axios.get(`${this.baseUrl}/${resource}/`);
+        return axios.get(`${this.baseUrl}/${resource}/${id}`);
     }
 
     ...
@@ -285,9 +285,9 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 
 @[1-8](Create an abstract interface)
 @[10-28](Implement concrete strategy)
-@[30-33](Instantiate with parameters)
+@[30-33](Extend with parameters)
 @[35-37](Use in a system component)
-@[48-43](Add IoC by Observables and FRP)
+@[38-49](Add IoC by Observables and FRP)
 
 #HSLIDE
 
@@ -327,12 +327,60 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 - Use them             <!-- .element: class="fragment" -->
 - Don't overthink      <!-- .element: class="fragment" -->
 
+#HSLIDE
+
 ## Separation of Concerns and Components
 
-#VSLIDE
+```js
+├── src
+│   ├── app
+│   │   ├── App.container.tsx
+│   │   ├── app.css
+│   │   └── index.tsx
+│   ├── store
+│   │   ├── actions.ts
+│   │   ├── index.ts
+│   │   ├── middlewares.ts
+│   │   ├── reducers.ts
+│   │   └── state.ts
+│   ├── features
+│   │   └── menu
+│   │   │   ├── MenuItem.tsx
+│   │   │   ├── Menu.container.tsx
+│   │   │   ├── Menu.spec.ts
+│   │   │   ├── aggregation.test.ts
+│   │   │   ├── aggregation.ts
+│   │   │   ├── api.ts
+│   │   │   ├── index.ts
+│   │   │   ├── menu.actions.ts
+│   │   │   ├── menu.constants.ts
+│   │   │   ├── menu.css
+│   │   │   ├── menu.d.ts
+│   │   │   ├── menu.epics.ts
+│   │   │   └── menu.reducer.ts
+│   │   ├── index.ts
+│   ├── utils
+│   │   ├── index.ts
+│   │   ├── sort.test.ts
+│   │   └── sort.ts
+│   ├── index.html
+│   └── index.tsx
+├── Makefile
+├── types
+├── package.json
+├── webpack.config.js
+├── tsconfig.json
+├── README.md
+```
 
-##
-- one
+@[34-39](Root configuration files)
+@[1-5](Application container and common layouts)
+@[6-11](Common framework settings and services)
+@[28-31](Utils and other common stuff)
+@[12-26](Features package)
+@[14-15](UI Components)
+@[16-17](Unit and integration tests)
+@[18-25](Other related files)
 
 #HSLIDE
 
