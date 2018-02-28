@@ -395,7 +395,7 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 ## Continuous Refactoring and Rethinking
 
-![refactoring](assets/images/refactor.jpg)
+![refactoring](assets/images/refact.jpg)
 
 #VSLIDE
 
