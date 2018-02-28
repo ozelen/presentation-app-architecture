@@ -191,7 +191,7 @@ const getSomeData = () => http.get(SOME_API_URL).
 
 ## Inversion of control (IoC)
 
-```tsx
+```jsx
 // Big config
 <AppFrame config={{
     authConfig,
@@ -283,11 +283,11 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
         map(actions.updateFeatureStore));
 ```
 
-@[1,8](Create an abstract interface)
-@[10,28](Implement concrete strategy)
-@[30,33](Instantiate with parameters)
-@[35,37](Use in a system component)
-@[48,43](Add IoC by Observables and FRP)
+@[1-8](Create an abstract interface)
+@[10-28](Implement concrete strategy)
+@[30-33](Instantiate with parameters)
+@[35-37](Use in a system component)
+@[48-43](Add IoC by Observables and FRP)
 
 ## Leverage Standard Interfaces
 
