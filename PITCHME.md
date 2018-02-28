@@ -191,7 +191,7 @@ const getSomeData = () => http.get(SOME_API_URL).
 
 ## Inversion of control (IoC)
 
-```jsx
+```js
 // Big config
 <AppFrame config={{
     authConfig,
@@ -201,7 +201,7 @@ const getSomeData = () => http.get(SOME_API_URL).
 }} />
 
 // Lego-style IoC
-<App theme={}>
+<App theme={theme}>
     <Authorization />
     <AppHeader>
         <BreadCrumbs>
@@ -214,8 +214,8 @@ const getSomeData = () => http.get(SOME_API_URL).
 </App>
 ```
 
-@[1,7](Component knows and everything inside)
-@[9,20](Component is a wrapper and exposes control to parent)
+@[1-7](Component knows and everything inside)
+@[9-20](Component is a wrapper and exposes control to parent)
 
 #VSLIDE
 
