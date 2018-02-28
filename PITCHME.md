@@ -289,6 +289,8 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 @[35-37](Use in a system component)
 @[48-43](Add IoC by Observables and FRP)
 
+#HSLIDE
+
 ## Leverage Standard Interfaces
 
 - Promises              <!-- .element: class="fragment" -->
