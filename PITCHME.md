@@ -56,7 +56,7 @@
 
 #VSLIDE
 
-## What is Architecture
+## Architecture is
 
 - A structure is a set of elements and the relations among them.                    <!-- .element: class="fragment" -->
 - Can be presented by a View                                                        <!-- .element: class="fragment" -->
@@ -65,12 +65,17 @@
 
 #VSLIDE
 
+## Architecture is not
+
+- Things are easy to change
+- Tools and libraries definition
+
 ## Architectural goals
 
 - Define system modules                                         <!-- .element: class="fragment" -->
 - Make system more predictable and easier to change             <!-- .element: class="fragment" -->
-- Make decisions clean and documented                           <!-- .element: class="fragment" -->
-- Tooling-Agnostic                                              <!-- .element: class="fragment" -->
+- Make important decisions early enough                         <!-- .element: class="fragment" -->
+- Meet requirements and the budget                              <!-- .element: class="fragment" -->
 
 #VSLIDE
 
@@ -94,31 +99,29 @@
 
 #HSLIDE
 
-# Functional vs. Non-functional requirements
+# Methodologies
 
-#HSLIDE
+![methodology](assets/images/methodology.gif)
 
-# Attribute Driven Design
+#VSLIDE
 
-## Quality attributes (aka Non-Func Requirements)
+## Attribute Driven Design
 
-Stands for tracking system's abilities
+### Quality attributes
 
 - Availability.
-- Conceptual Integrity.
 - Interoperability.
 - Maintainability.
+- Conceptual Integrity.
 - Security.
 - Performance.
 - Reliability.
 - Reusability.
 - ...
 
-#HSLIDE
+#VSLIDE
 
 # Domain Driven Design
-
-Teaches how to break down system elements and name things.
 
 - Ubiquitous language
 - Boundary context
@@ -301,7 +304,11 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 - GraphQL               <!-- .element: class="fragment" -->
 - OData                 <!-- .element: class="fragment" -->
 
-#VSLIDE
+#HSLIDE
+
+# Messaging patterns
+
+![messaging](/assets/images/messaging.png)
 
 ## Tooling-Agnostic architecture
 
@@ -309,15 +316,17 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 - Platforms and libraries you use are important, but could be changed. <!-- .element: class="fragment" -->
 - Rather rely on interfaces than on tools and platforms.               <!-- .element: class="fragment" -->
 
-#VSLIDE
+#HSLIDE
 
 # Domain-specific architecture
 
+#VSLIDE
+
 ## Antiapttern: Universe Architecture
 
-![universe](assets/images/universe.png)
-
 Too abstract and soft approach, ends up as too vague and complex in implementation.
+
+![universe](assets/images/universe.png)
 
 
 #HSLIDE
@@ -405,10 +414,15 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 #HSLIDE
 
-## References
+# Questions
+
+#HSLIDE
+
+# Reference
 
 ![analysis](assets/images/cleanup.jpg)
 
 - [Software Architecture in Practice (3rd Edition) (SEI Series in Software Engineering)](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734)
 - [MSDN - Chapter 16: Quality Attributes](https://msdn.microsoft.com/en-us/library/ee658094.aspx)
 - [Vasa Ship](https://en.wikipedia.org/wiki/Vasa_(ship))
+- [Experiments Boilerplate](https://github.com/ozelen/neo-feed)
