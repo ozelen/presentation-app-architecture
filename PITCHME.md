@@ -380,12 +380,10 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 @[12-26](Features package)
 @[14-15](UI Components)
 @[16-17](Unit and integration tests)
-@[18-25](Other related files)
+@[18-26](Other related files)
 
 
 #HSLIDE
-
-#VSLIDE
 
 ### Avoid
 
@@ -393,14 +391,14 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 ![analysis](assets/images/analysis-paralysis.png)
 
-## Continuous Refactoring and Rethinking
+#VSLIDE
+
 
 #VSLIDE
 
-##
-![analysis](assets/images/vasa.jpg)
-
 ## Continuous Refactoring and Rethinking
+
+![refactoring](assets/images/refactoring.jpg)
 
 #VSLIDE
 
