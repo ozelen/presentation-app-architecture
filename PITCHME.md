@@ -40,7 +40,7 @@
 - Onboarding new comers                   <!-- .element: class="fragment" -->
 - Leading Web UI comptence group          <!-- .element: class="fragment" -->
 
-#HSLIDE
+---
 ## AGENDA
 
 - What is Architecture          <!-- .element: class="fragment" -->
@@ -48,11 +48,11 @@
 - Application Architecture      <!-- .element: class="fragment" -->
 - Patterns & Anti-Patterns      <!-- .element: class="fragment" -->
 
-#HSLIDE
+---
 
 ## What is Architecture
-
-![Architecture](assets/images/architecture.png)
+assets/images/architecture.jpg
+![Architecture](assets/images/architecture.jpg)
 
 #VSLIDE
 
@@ -69,6 +69,8 @@
 
 - Things are easy to change
 - Tools and libraries definition
+
+#VSLIDE
 
 ## Architectural goals
 
@@ -97,7 +99,7 @@
 ***
 *Software Architecture in Practice, Ch. 1 -- What Is Software Architecture?*
 
-#HSLIDE
+---
 
 # Methodologies
 
@@ -107,31 +109,35 @@
 
 ## Attribute Driven Design
 
+#VSLIDE
+
 ### Quality attributes
+
+System's non-functional abilities
 
 - Availability.
 - Interoperability.
 - Maintainability.
-- Conceptual Integrity.
 - Security.
 - Performance.
 - Reliability.
 - Reusability.
-- ...
+- etc. 
 
 #VSLIDE
 
 # Domain Driven Design
 
+System's domain-specific aspects
+
 - Ubiquitous language
 - Boundary context
 - Domain-specific module structure
 - Anti-corruption layer
-- ...
 
-#HSLIDE
+---
 
-## Architectural scope
+## A Good Architecture is
 
 1. Architecture for change                           <!-- .element: class="fragment" -->
 1. Domain Specific                                   <!-- .element: class="fragment" -->
@@ -141,15 +147,9 @@
 1. Pattern-oriented Architecture                     <!-- .element: class="fragment" -->
 1. Continuous Refactoring                            <!-- .element: class="fragment" -->
 
-#HSLIDE
+---
 
-## Architecture for change
-
-### Attributes
-
-- Maintainability    <!-- .element: class="fragment" -->
-- Configurability    <!-- .element: class="fragment" -->
-- Modifiability      <!-- .element: class="fragment" -->
+# Practices
 
 #VSLIDE
 
@@ -192,9 +192,11 @@ const getSomeData = () => http.get(SOME_API_URL).
 
 #VSLIDE
 
-## Inversion of control (IoC)
+## Inversion of control
 
-```js
+#VSLIDE
+
+```jsx
 // Big config
 <AppFrame config={{
     authConfig,
@@ -292,7 +294,7 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 @[35-37](Use in a system component)
 @[38-49](Add IoC by Observables and FRP)
 
-#HSLIDE
+---
 
 ## Leverage Standard Interfaces
 
@@ -304,7 +306,7 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 - GraphQL               <!-- .element: class="fragment" -->
 - OData                 <!-- .element: class="fragment" -->
 
-#HSLIDE
+---
 
 # Messaging patterns
 
@@ -316,7 +318,7 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 - Platforms and libraries you use are important, but could be changed. <!-- .element: class="fragment" -->
 - Rather rely on interfaces than on tools and platforms.               <!-- .element: class="fragment" -->
 
-#HSLIDE
+---
 
 # Domain-specific architecture
 
@@ -329,14 +331,14 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 ![universe](assets/images/universe.png)
 
 
-#HSLIDE
+---
 
 ## Clean coding principles (e.g. SOLID)
 
 - Use them             <!-- .element: class="fragment" -->
 - Don't overthink      <!-- .element: class="fragment" -->
 
-#HSLIDE
+---
 
 ## Separation of Concerns and Components
 
@@ -392,7 +394,7 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 @[18-26](Other related files)
 
 
-#HSLIDE
+---
 
 ### Avoid
 
@@ -412,11 +414,11 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 ![analysis](assets/images/cleanup.jpg)
 
-#HSLIDE
+---
 
 # Questions
 
-#HSLIDE
+---
 
 # Reference
 
