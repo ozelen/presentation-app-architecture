@@ -43,10 +43,9 @@
 ---
 ## AGENDA
 
-- What is Architecture          <!-- .element: class="fragment" -->
-- Main Principles               <!-- .element: class="fragment" -->
-- Application Architecture      <!-- .element: class="fragment" -->
-- Patterns & Anti-Patterns      <!-- .element: class="fragment" -->
+- What is and isn't Architecture <!-- .element: class="fragment" -->
+- Application Architecture       <!-- .element: class="fragment" -->
+- Patterns & -patterns-Patterns       <!-- .element: class="fragment" -->
 
 ---
 
@@ -70,6 +69,8 @@
 - Things are easy to change             <!-- .element: class="fragment" -->
 - Tools and libraries definition        <!-- .element: class="fragment" -->
 
+#VSLIDE
+
 ### Architecture must be driven by requirements, not by tools
 
 #VSLIDE
@@ -81,6 +82,14 @@
 - Make important decisions early enough                         <!-- .element: class="fragment" -->
 - Meet requirements and the budget                              <!-- .element: class="fragment" -->
 
+## Architectural goals (MSDN version)
+
+- How will the users be using the application?                                                            <!-- .element: class="fragment" -->
+- How will the application be deployed into production and managed?                                       <!-- .element: class="fragment" -->
+- What are the quality attribute requirements for the application?                                        <!-- .element: class="fragment" -->
+- How can the application be designed to be flexible and maintainable over time?                          <!-- .element: class="fragment" -->
+- What are the architectural trends that might impact your application now or after it has been deployed? <!-- .element: class="fragment" -->
+
 #VSLIDE
 
 ## Difference from other Architectures
@@ -89,6 +98,17 @@
 - Requirements for Software are less deterministic              <!-- .element: class="fragment" -->
 - Implementation Process is less deterministic as well          <!-- .element: class="fragment" -->
 - Very domain specific                                          <!-- .element: class="fragment" -->
+
+#VSLIDE
+
+## Key Architecture Principles
+
+- Consider the following key principles when designing your architecture:
+- Build to change instead of building to last.
+- Model to analyze and reduce risk.
+- Use models and visualizations as a communication and collaboration tool.
+- Identify key engineering decisions.
+
 
 #VSLIDE
 
@@ -113,6 +133,7 @@
 1. Pattern-oriented Architecture                     <!-- .element: class="fragment" -->
 1. Continuous Refactoring                            <!-- .element: class="fragment" -->
 
+#VSLIDE
 ## Bad Architecture
 
 1. There's no wrong Architecture                        <!-- .element: class="fragment" -->
@@ -120,7 +141,7 @@
 
 #VSLIDE
 
-## Vasa example
+## Vasa case
 
 ![vasa](assets/images/vasa.jpg)
 
@@ -158,7 +179,7 @@ System's domain-specific aspects
 - Ubiquitous language               <!-- .element: class="fragment" -->
 - Boundary context                  <!-- .element: class="fragment" -->
 - Domain-specific module structure  <!-- .element: class="fragment" -->
-- Anti-corruption layer             <!-- .element: class="fragment" -->
+- -patterns-corruption layer             <!-- .element: class="fragment" -->
 
 ---
 
@@ -309,13 +330,13 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 
 ---
 
-# Service dependencies
+## Messaging
 
 ![dependencies](/assets/images/dependencies.png)
 
----
+#VSLIDE
 
-# Messaging patterns
+## Messaging
 
 ![messaging](/assets/images/messaging.png)
 
@@ -418,11 +439,37 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 ---
 
-### Avoid
 
-# Analysis Paralysis
+## Groundhog Day
+
+![groundhogday](assets/images/groundhogday.jpg
+
+#VSLIDE
+
+## To avoid recurrent decisions:
+
+1. Make decision
+1. Document it
+1. Communicate it
+
+---
+
+## Analysis Paralysis
 
 ![analysis](assets/images/analysis-paralysis.png)
+
+#VSLIDE
+
+![armchair](assets/images/armchair.png)
+
+#VSLIDES
+
+## Do Spikes
+
+1. Make a draft
+1. Do prototyping
+1. Analyse result
+1. Make a decision out of this
 
 #VSLIDE
 
@@ -447,6 +494,7 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 ![analysis](assets/images/cleanup.jpg)
 
 - [Software Architecture in Practice (3rd Edition) (SEI Series in Software Engineering)](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734)
+- [MSDN - Chapter 1: What is Software Architecture?](https://msdn.microsoft.com/en-us/library/ee658098.aspx)
 - [MSDN - Chapter 16: Quality Attributes](https://msdn.microsoft.com/en-us/library/ee658094.aspx)
 - [Vasa Ship](https://en.wikipedia.org/wiki/Vasa_(ship))
 - [Experiments Boilerplate](https://github.com/ozelen/neo-feed)
