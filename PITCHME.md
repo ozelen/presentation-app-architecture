@@ -45,7 +45,7 @@
 
 - What is and isn't Architecture <!-- .element: class="fragment" -->
 - Application Architecture       <!-- .element: class="fragment" -->
-- Patterns & -patterns-Patterns       <!-- .element: class="fragment" -->
+- Practices                      <!-- .element: class="fragment" -->
 
 ---
 
@@ -82,6 +82,7 @@
 - Make important decisions early enough                         <!-- .element: class="fragment" -->
 - Meet requirements and the budget                              <!-- .element: class="fragment" -->
 
+#VSLIDE
 ## Architectural goals (MSDN version)
 
 - How will the users be using the application?                                                            <!-- .element: class="fragment" -->
@@ -103,11 +104,10 @@
 
 ## Key Architecture Principles
 
-- Consider the following key principles when designing your architecture:
-- Build to change instead of building to last.
-- Model to analyze and reduce risk.
-- Use models and visualizations as a communication and collaboration tool.
-- Identify key engineering decisions.
+- Build to change instead of building to last.                             <!-- .element: class="fragment" -->
+- Model to analyze and reduce risk.                                        <!-- .element: class="fragment" -->
+- Use models and visualizations as a communication and collaboration tool. <!-- .element: class="fragment" -->
+- Identify key engineering decisions.                                      <!-- .element: class="fragment" -->
 
 
 #VSLIDE
@@ -131,7 +131,7 @@
 1. Dependency Management                             <!-- .element: class="fragment" -->
 1. Code Standards                                    <!-- .element: class="fragment" -->
 1. Pattern-oriented Architecture                     <!-- .element: class="fragment" -->
-1. Continuous Refactoring                            <!-- .element: class="fragment" -->
+1. Continuously Maintained                           <!-- .element: class="fragment" -->
 
 #VSLIDE
 ## Bad Architecture
