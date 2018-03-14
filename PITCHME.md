@@ -442,7 +442,7 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 ## Groundhog Day
 
-![groundhogday](assets/images/groundhogday.jpg
+![groundhogday](assets/images/groundhogday.jpg)
 
 #VSLIDE
 
