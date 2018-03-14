@@ -51,7 +51,7 @@
 ---
 
 ## What is Architecture
-assets/images/architecture.jpg
+
 ![Architecture](assets/images/architecture.jpg)
 
 #VSLIDE
@@ -67,8 +67,10 @@ assets/images/architecture.jpg
 
 ## Architecture is not
 
-- Things are easy to change
-- Tools and libraries definition
+- Things are easy to change             <!-- .element: class="fragment" -->
+- Tools and libraries definition        <!-- .element: class="fragment" -->
+
+### Architecture must be driven by requirements, not by tools
 
 #VSLIDE
 
@@ -101,6 +103,29 @@ assets/images/architecture.jpg
 
 ---
 
+## Good Architecture
+
+1. Architecture for change                           <!-- .element: class="fragment" -->
+1. Domain Specific                                   <!-- .element: class="fragment" -->
+1. Project structure decomposition                   <!-- .element: class="fragment" -->
+1. Dependency Management                             <!-- .element: class="fragment" -->
+1. Code Standards                                    <!-- .element: class="fragment" -->
+1. Pattern-oriented Architecture                     <!-- .element: class="fragment" -->
+1. Continuous Refactoring                            <!-- .element: class="fragment" -->
+
+## Bad Architecture
+
+1. There's no wrong Architecture                        <!-- .element: class="fragment" -->
+1. Architecture can be more or less fit for the purpose <!-- .element: class="fragment" -->
+
+#VSLIDE
+
+## Vasa example
+
+![vasa](assets/images/vasa.jpg)
+
+---
+
 # Methodologies
 
 ![methodology](assets/images/methodology.gif)
@@ -115,14 +140,14 @@ assets/images/architecture.jpg
 
 System's non-functional abilities
 
-- Availability.
-- Interoperability.
-- Maintainability.
-- Security.
-- Performance.
-- Reliability.
-- Reusability.
-- etc. 
+- Availability.      <!-- .element: class="fragment" -->
+- Interoperability.  <!-- .element: class="fragment" -->
+- Maintainability.   <!-- .element: class="fragment" -->
+- Security.          <!-- .element: class="fragment" -->
+- Performance.       <!-- .element: class="fragment" -->
+- Reliability.       <!-- .element: class="fragment" -->
+- Reusability.       <!-- .element: class="fragment" -->
+- etc.               <!-- .element: class="fragment" -->
 
 #VSLIDE
 
@@ -130,22 +155,10 @@ System's non-functional abilities
 
 System's domain-specific aspects
 
-- Ubiquitous language
-- Boundary context
-- Domain-specific module structure
-- Anti-corruption layer
-
----
-
-## A Good Architecture is
-
-1. Architecture for change                           <!-- .element: class="fragment" -->
-1. Domain Specific                                   <!-- .element: class="fragment" -->
-1. Project structure decomposition                   <!-- .element: class="fragment" -->
-1. Dependency Management                             <!-- .element: class="fragment" -->
-1. Code Standards                                    <!-- .element: class="fragment" -->
-1. Pattern-oriented Architecture                     <!-- .element: class="fragment" -->
-1. Continuous Refactoring                            <!-- .element: class="fragment" -->
+- Ubiquitous language               <!-- .element: class="fragment" -->
+- Boundary context                  <!-- .element: class="fragment" -->
+- Domain-specific module structure  <!-- .element: class="fragment" -->
+- Anti-corruption layer             <!-- .element: class="fragment" -->
 
 ---
 
@@ -155,11 +168,11 @@ System's domain-specific aspects
 
 ## Reduce Dependencies
 
-- Decouple modules and components
-- Messaging patterns (Pub/Sub, Message bus, Redux, etx)
-- Manage and reduce external dependencies
-- Inversion of control Principle
-- Dependency Inversion Principle (SOLID)
+- Decouple modules and components                        <!-- .element: class="fragment" -->
+- Messaging patterns (Pub/Sub, Message bus, Redux, etx)  <!-- .element: class="fragment" -->
+- Manage and reduce external dependencies                <!-- .element: class="fragment" -->
+- Inversion of control Principle                         <!-- .element: class="fragment" -->
+- Dependency Inversion Principle (SOLID)                 <!-- .element: class="fragment" -->
 
 #VSLIDE
 
@@ -226,10 +239,10 @@ const getSomeData = () => http.get(SOME_API_URL).
 
 ## IoC Examples
 
-- Observables
-- Promises
-- Dependency injection
-- Strategy pattern
+- Observables               <!-- .element: class="fragment" -->
+- Promises                  <!-- .element: class="fragment" -->
+- Dependency injection      <!-- .element: class="fragment" -->
+- Strategy pattern          <!-- .element: class="fragment" -->
 
 #VSLIDE
 
@@ -296,6 +309,19 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 
 ---
 
+# Service dependencies
+
+![dependencies](/assets/images/dependencies.png)
+
+---
+
+# Messaging patterns
+
+![messaging](/assets/images/messaging.png)
+
+---
+
+
 ## Leverage Standard Interfaces
 
 - Promises              <!-- .element: class="fragment" -->
@@ -307,10 +333,6 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 - OData                 <!-- .element: class="fragment" -->
 
 ---
-
-# Messaging patterns
-
-![messaging](/assets/images/messaging.png)
 
 ## Tooling-Agnostic architecture
 
