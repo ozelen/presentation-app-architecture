@@ -377,17 +377,19 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 ## Antiapttern: Groundhog Day
 
-Important architectural decisions that were once made get lost, forgotten or are not communicated effectively
-
 ![groundhogday](assets/images/groundhogday.jpg)
+
+#VSLIDE
+
+Important architectural decisions that were once made get lost, forgotten or are not communicated effectively
 
 #VSLIDE
 
 ## Solution
 
-1. Make a decision
-1. Document it
-1. Communicate it
+1. Make a decision  <!-- .element: class="fragment" -->
+1. Document it      <!-- .element: class="fragment" -->
+1. Communicate it   <!-- .element: class="fragment" -->
 
 ---
 
@@ -405,10 +407,10 @@ It is when you know too much to do anything.
 
 ## Solution: Quick Spikes
 
-1. Make a handdrawn draft
-1. Do prototyping and face problems
-1. Analyse result
-1. Make a decision out of this
+1. Make a handdrawn draft            <!-- .element: class="fragment" -->
+1. Do prototyping and face problems  <!-- .element: class="fragment" -->
+1. Analyse result                    <!-- .element: class="fragment" -->
+1. Make a decision out of this       <!-- .element: class="fragment" -->
 
 ---
 
