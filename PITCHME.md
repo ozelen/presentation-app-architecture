@@ -26,12 +26,6 @@
 
 #VSLIDE
 
-## In love with JS since 1999
-
-![Logo](assets/images/this.png)
-
-#VSLIDE
-
 ## Currently
 
 - COE Solutions                           <!-- .element: class="fragment" -->
