@@ -375,94 +375,40 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 ---
 
-## Separation of Concerns and Components
+## Antiapttern: Groundhog Day
 
-```js
-├── src
-│   ├── app
-│   │   ├── App.container.tsx
-│   │   ├── app.css
-│   │   └── index.tsx
-│   ├── store
-│   │   ├── actions.ts
-│   │   ├── index.ts
-│   │   ├── middlewares.ts
-│   │   ├── reducers.ts
-│   │   └── state.ts
-│   ├── features
-│   │   └── menu
-│   │   │   ├── MenuItem.tsx
-│   │   │   ├── Menu.container.tsx
-│   │   │   ├── Menu.spec.ts
-│   │   │   ├── aggregation.test.ts
-│   │   │   ├── aggregation.ts
-│   │   │   ├── api.ts
-│   │   │   ├── index.ts
-│   │   │   ├── menu.actions.ts
-│   │   │   ├── menu.constants.ts
-│   │   │   ├── menu.css
-│   │   │   ├── menu.d.ts
-│   │   │   ├── menu.epics.ts
-│   │   │   └── menu.reducer.ts
-│   │   ├── index.ts
-│   ├── utils
-│   │   ├── index.ts
-│   │   ├── sort.test.ts
-│   │   └── sort.ts
-│   ├── index.html
-│   └── index.tsx
-├── Makefile
-├── types
-├── package.json
-├── webpack.config.js
-├── tsconfig.json
-├── README.md
-```
-
-@[34-39](Root configuration files)
-@[1-5](Application container and common layouts)
-@[6-11](Common framework settings and services)
-@[28-31](Utils and other common stuff)
-@[12-26](Features package)
-@[14-15](UI Components)
-@[16-17](Unit and integration tests)
-@[18-26](Other related files)
-
-
----
-
-
-## Groundhog Day
+Important architectural decisions that were once made get lost, forgotten or are not communicated effectively
 
 ![groundhogday](assets/images/groundhogday.jpg)
 
 #VSLIDE
 
-## To avoid recurrent decisions:
+## Solution
 
-1. Make decision
+1. Make a decision
 1. Document it
 1. Communicate it
 
 ---
 
-## Analysis Paralysis
+## Antiapttern: Analysis Paralysis
 
 ![analysis](assets/images/analysis-paralysis.png)
 
 #VSLIDE
 
-![armchair](assets/images/armchair.png)
+It is when you know too much to do anything.
+
+![armchair](assets/images/armchair.jpg)
 
 #VSLIDES
 
-## Do Spikes
+## Solution: Quick Spikes
 
-1. Make a draft
-1. Do prototyping
+1. Make a handdrawn draft
+1. Do prototyping and face problems
 1. Analyse result
 1. Make a decision out of this
-
 
 ---
 
@@ -472,16 +418,16 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 #VSLIDE
 
-## Continuous Refactoring and Rethinking
-
-![refactoring](assets/images/refact.jpg)
-
-#VSLIDE
-
-## Clean coding principles (e.g. SOLID)
+## Solution: Clean Coding & SOLID
 
 - Use them             <!-- .element: class="fragment" -->
 - But don't overthink  <!-- .element: class="fragment" -->
+
+#VSLIDE
+
+## Continuous Refactoring and Rethinking
+
+![refactoring](assets/images/refact.jpg)
 
 ---
 
