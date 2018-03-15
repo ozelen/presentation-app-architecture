@@ -43,9 +43,15 @@
 ---
 ## AGENDA
 
-- What is and isn't Architecture <!-- .element: class="fragment" -->
-- Application Architecture       <!-- .element: class="fragment" -->
-- Practices                      <!-- .element: class="fragment" -->
+1. What is and isn't Architecture <!-- .element: class="fragment" -->
+1. Good and bad Architecture      <!-- .element: class="fragment" -->
+1. Anti-patterns and solutions    <!-- .element: class="fragment" -->
+
+---
+
+#### Chapter 1
+
+# What is and isn't Architecture
 
 ---
 
@@ -123,6 +129,12 @@
 
 ---
 
+#### Chapter 2
+
+# Good and bad Architecture
+
+---
+
 ## Good Architecture
 
 1. Architecture for change                           <!-- .element: class="fragment" -->
@@ -134,6 +146,7 @@
 1. Continuously Maintained                           <!-- .element: class="fragment" -->
 
 #VSLIDE
+
 ## Bad Architecture
 
 1. There's no wrong Architecture                        <!-- .element: class="fragment" -->
@@ -172,7 +185,7 @@ System's non-functional abilities
 
 #VSLIDE
 
-# Domain Driven Design
+## Domain Driven Design (DDD)
 
 System's domain-specific aspects
 
@@ -183,9 +196,20 @@ System's domain-specific aspects
 
 ---
 
-# Practices
+#### Chapter 3
+
+# Anti-patterns and solutions
+
+---
+
+#### Antipattern
+
+## Dependency hell
 
 #VSLIDE
+
+
+#### Solution 1
 
 ## Reduce Dependencies
 
@@ -197,11 +221,15 @@ System's domain-specific aspects
 
 #VSLIDE
 
+#### Solution 2
+
 ## Dependency Inversion
 
-#VSLIDE
+---
 
-## Antipattern: Dependency Hell
+#### Example
+
+External library is throughout entire application, replacing it might be hard:
 
 ```ts
 import axios from 'axios';
@@ -330,18 +358,26 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 
 ---
 
-## Messaging
+#### Example
+
+## Tangled relations
 
 ![dependencies](/assets/images/dependencies.png)
 
 #VSLIDE
+
+#### Solution
 
 ## Messaging
 
 ![messaging](/assets/images/messaging.png)
 
 ---
+#### Antipattern
 
+## Inventing the wheel
+
+#### Solution
 
 ## Leverage Standard Interfaces
 
@@ -363,11 +399,9 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 
 ---
 
-# Domain-specific architecture
+#### Antipattern
 
-#VSLIDE
-
-## Antiapttern: Universe Architecture
+## Universe Architecture
 
 Too abstract and soft approach, ends up as too vague and complex in implementation.
 
@@ -375,7 +409,9 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 ---
 
-## Antiapttern: Groundhog Day
+#### Antipattern
+
+## Groundhog Day
 
 ![groundhogday](assets/images/groundhogday.jpg)
 
@@ -385,7 +421,9 @@ Important architectural decisions that were once made get lost, forgotten or are
 
 #VSLIDE
 
-## Solution
+#### Solution
+
+## Define the solution
 
 1. Make a decision  <!-- .element: class="fragment" -->
 1. Document it      <!-- .element: class="fragment" -->
@@ -393,7 +431,9 @@ Important architectural decisions that were once made get lost, forgotten or are
 
 ---
 
-## Antiapttern: Analysis Paralysis
+#### Antipattern
+
+## Analysis Paralysis
 
 ![analysis](assets/images/analysis-paralysis.png)
 
@@ -405,7 +445,9 @@ It is when you know too much to do anything.
 
 #VSLIDE
 
-## Solution: Quick Spikes
+#### Solution
+
+## Quick Spikes
 
 1. Make a handdrawn draft            <!-- .element: class="fragment" -->
 1. Do prototyping and face problems  <!-- .element: class="fragment" -->
@@ -413,6 +455,7 @@ It is when you know too much to do anything.
 1. Make a decision out of this       <!-- .element: class="fragment" -->
 
 ---
+#### Antipattern
 
 ## Big Ball of Mud (BBM)
 
@@ -421,7 +464,7 @@ It is when you know too much to do anything.
 #VSLIDE
 
 #### Solution #1
-## SOLID
+# SOLID
 
 - Use them             <!-- .element: class="fragment" -->
 - But don't overthink  <!-- .element: class="fragment" -->
@@ -430,7 +473,7 @@ It is when you know too much to do anything.
 
 #### Solution 2
 
-## Continuous Refactoring
+# Continuous Refactoring
 
 ![refactoring](assets/images/refact.jpg)
 
