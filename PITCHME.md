@@ -401,7 +401,7 @@ It is when you know too much to do anything.
 
 ![armchair](assets/images/armchair.jpg)
 
-#VSLIDES
+#VSLIDE
 
 ## Solution: Quick Spikes
 
@@ -418,14 +418,17 @@ It is when you know too much to do anything.
 
 #VSLIDE
 
-## Solution: Clean Coding & SOLID
+#### Solution #1
+## SOLID
 
 - Use them             <!-- .element: class="fragment" -->
 - But don't overthink  <!-- .element: class="fragment" -->
 
 #VSLIDE
 
-## Continuous Refactoring and Rethinking
+#### Solution 2
+
+## Continuous Refactoring
 
 ![refactoring](assets/images/refact.jpg)
 
