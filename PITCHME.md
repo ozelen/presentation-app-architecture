@@ -45,6 +45,7 @@
 
 1. What is and isn't Architecture <!-- .element: class="fragment" -->
 1. Good and bad Architecture      <!-- .element: class="fragment" -->
+1. Methodologies                  <!-- .element: class="fragment" -->
 1. Anti-patterns and solutions    <!-- .element: class="fragment" -->
 
 ---
@@ -160,6 +161,8 @@
 
 ---
 
+#### Chapter 4
+
 # Methodologies
 
 ![methodology](assets/images/methodology.gif)
@@ -193,6 +196,14 @@ System's domain-specific aspects
 - Boundary context                  <!-- .element: class="fragment" -->
 - Domain-specific module structure  <!-- .element: class="fragment" -->
 - Anti-corruption layer             <!-- .element: class="fragment" -->
+
+#VSLIDE
+
+## SOLID
+
+- Provides the basics
+- Technology-agnostic
+- Simple
 
 ---
 
