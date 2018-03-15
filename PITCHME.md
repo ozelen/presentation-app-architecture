@@ -192,7 +192,7 @@ System's domain-specific aspects
 - Ubiquitous language               <!-- .element: class="fragment" -->
 - Boundary context                  <!-- .element: class="fragment" -->
 - Domain-specific module structure  <!-- .element: class="fragment" -->
-- -patterns-corruption layer             <!-- .element: class="fragment" -->
+- Anti-corruption layer             <!-- .element: class="fragment" -->
 
 ---
 
@@ -221,11 +221,18 @@ System's domain-specific aspects
 
 #VSLIDE
 
+## Tooling-Agnostic architecture
+
+- Design data flows and system elements.                               <!-- .element: class="fragment" -->
+- Platforms and libraries you use are important, but could be changed. <!-- .element: class="fragment" -->
+- Rather rely on interfaces than on tools and platforms.               <!-- .element: class="fragment" -->
+
+
 #### Solution 2
 
 ## Dependency Inversion
 
----
+#VSLIDE
 
 #### Example
 
@@ -252,7 +259,7 @@ const getSomeData = () => http.get(SOME_API_URL).
     then(actions.updateDataFail);
 ```
 
-#VSLIDE
+---
 
 ## Inversion of control
 
@@ -288,14 +295,17 @@ const getSomeData = () => http.get(SOME_API_URL).
 
 ## IoC Examples
 
-- Observables               <!-- .element: class="fragment" -->
-- Promises                  <!-- .element: class="fragment" -->
 - Dependency injection      <!-- .element: class="fragment" -->
 - Strategy pattern          <!-- .element: class="fragment" -->
+- Decorator pattern         <!-- .element: class="fragment" -->
+- Composition               <!-- .element: class="fragment" -->
+- Polymorphism              <!-- .element: class="fragment" -->
 
-#VSLIDE
+---
 
 ## DI + IoC
+
+are perfectly combined
 
 #VSLIDE
 
@@ -358,7 +368,7 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 
 ---
 
-#### Example
+#### Antipattern
 
 ## Tangled relations
 
@@ -377,6 +387,8 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 
 ## Inventing the wheel
 
+---
+
 #### Solution
 
 ## Leverage Standard Interfaces
@@ -388,14 +400,6 @@ export const pollingApi = (action$: ActionsObservable<Action>) =>
 - HATEOAS               <!-- .element: class="fragment" -->
 - GraphQL               <!-- .element: class="fragment" -->
 - OData                 <!-- .element: class="fragment" -->
-
----
-
-## Tooling-Agnostic architecture
-
-- Design data flows and system elements.                               <!-- .element: class="fragment" -->
-- Platforms and libraries you use are important, but could be changed. <!-- .element: class="fragment" -->
-- Rather rely on interfaces than on tools and platforms.               <!-- .element: class="fragment" -->
 
 ---
 
@@ -455,6 +459,23 @@ It is when you know too much to do anything.
 1. Make a decision out of this       <!-- .element: class="fragment" -->
 
 ---
+
+#### Antipattern
+
+## Premature refactoring
+
+Paying too much efforts to decoupling before doing anything
+
+#VSLIDE
+
+#### Solution
+
+## YAGNI
+
+- Don't segregate modules when your scope is vague
+
+---
+
 #### Antipattern
 
 ## Big Ball of Mud (BBM)
