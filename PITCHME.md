@@ -373,14 +373,6 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 ![universe](assets/images/universe.png)
 
-
----
-
-## Clean coding principles (e.g. SOLID)
-
-- Use them             <!-- .element: class="fragment" -->
-- Don't overthink      <!-- .element: class="fragment" -->
-
 ---
 
 ## Separation of Concerns and Components
@@ -471,6 +463,13 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 1. Analyse result
 1. Make a decision out of this
 
+
+---
+
+## Big Ball of Mud (BBM)
+
+![cleanup](assets/images/cleanup.jpg)
+
 #VSLIDE
 
 ## Continuous Refactoring and Rethinking
@@ -479,19 +478,20 @@ Too abstract and soft approach, ends up as too vague and complex in implementati
 
 #VSLIDE
 
-## Continuous Cleanup
+## Clean coding principles (e.g. SOLID)
 
-![analysis](assets/images/cleanup.jpg)
+- Use them             <!-- .element: class="fragment" -->
+- But don't overthink  <!-- .element: class="fragment" -->
 
 ---
 
 # Questions
 
+![refactoring](assets/images/worksonmymachine.jpg)
+
 ---
 
 # Reference
-
-![analysis](assets/images/cleanup.jpg)
 
 - [Software Architecture in Practice (3rd Edition) (SEI Series in Software Engineering)](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734)
 - [MSDN - Chapter 1: What is Software Architecture?](https://msdn.microsoft.com/en-us/library/ee658098.aspx)
