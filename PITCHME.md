@@ -159,6 +159,16 @@
 
 ![vasa](assets/images/vasa.jpg)
 
+#VSLIDE
+
+## Reasons of epic fail
+
+1. No specs.
+1. Requirements creep.
+1. Architect died meanwhile.
+1. No metrics and scientific methods.
+1. Tests skipped or ignored.
+
 ---
 
 #### Chapter 4
@@ -522,5 +532,5 @@ Paying too much efforts to decoupling before doing anything
 - [Software Architecture in Practice (3rd Edition) (SEI Series in Software Engineering)](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734)
 - [MSDN - Chapter 1: What is Software Architecture?](https://msdn.microsoft.com/en-us/library/ee658098.aspx)
 - [MSDN - Chapter 16: Quality Attributes](https://msdn.microsoft.com/en-us/library/ee658094.aspx)
-- [Vasa Ship](https://en.wikipedia.org/wiki/Vasa_(ship))
+- [Why The Vasa Sank: 10 Lessons Learned](http://faculty.up.edu/lulay/failure/vasacasestudy.pdf)
 - [Experiments Boilerplate](https://github.com/ozelen/neo-feed)
